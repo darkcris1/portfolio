@@ -1,0 +1,47 @@
+.header-background {
+  height: 400px;
+  width: 100%;
+  padding-top: 80px;
+  background: $fourth;
+  background: linear-gradient(rgba(black, 0.8), rgba(black, 0.4)),
+    linear-gradient(rgba($fourth, 0.7), rgba($fourth, 0.7)),
+    var(--url) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include responsive('medium') {
+    text-align: left;
+  }
+  .content {
+    width: 80%;
+    & > * {
+      opacity: 0;
+    }
+    .title {
+      margin: 0.2rem 0;
+      width: 100%;
+      @include responsive('medium') {
+        width: fit-content;
+      }
+      text-align: center;
+    }
+    .sub-text {
+      font-size: 1.2rem;
+    }
+    hr {
+      background: grey;
+      margin: 0.2rem 0;
+      width: 110%;
+    }
+    a {
+      display: inline-block;
+    }
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

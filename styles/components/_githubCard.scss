@@ -1,0 +1,62 @@
+.github-user {
+  border: 1px solid lightgrey;
+  display: flex;
+  padding: rem;
+  color: black;
+  width: 100%;
+  padding: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  background: white;
+  box-shadow: $shadow;
+  flex-direction: column;
+  z-index: 2;
+  @include responsive('medium') {
+    flex-direction: row;
+    width: 60%;
+  }
+  .user {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .bio {
+    margin: 1rem 0;
+  }
+  a {
+    color: $primary;
+    text-decoration: underline;
+  }
+  .avatar img {
+    margin-right: 0.5rem;
+    height: 100%;
+    width: 9rem;
+  }
+  .content {
+    flex: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    @include responsive('medium') {
+      justify-content: initial;
+      align-items: initial;
+      text-align: left;
+    }
+  }
+  .counts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .repo svg {
+    margin-right: 5px;
+    width: 15px;
+    color: $secondary;
+  }
+}

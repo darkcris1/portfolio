@@ -1,0 +1,13 @@
+.work-section {
+  position: relative;
+  margin: 0;
+  border-radius: 0;
+  @include responsive('medium') {
+    border-radius: 20px;
+    margin: 1rem;
+  }
+
+  @import '../components/githubCard';
+
+  @import '../components/card';
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <path d="M0 0L32.7724 0L32.7724 32.7724L0 32.7724L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="icons8_facebook">
+    <path d="M0 0L32.7724 0L32.7724 32.7724L0 32.7724L0 0Z" id="Background" fill="none" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M24.5793 21.1655C24.5793 23.0513 23.0513 24.5793 21.1655 24.5793L3.41379 24.5793C1.5287 24.5793 0 23.0513 0 21.1655L0 3.41379C0 1.52801 1.5287 0 3.41379 0L21.1655 0C23.0513 0 24.5793 1.52801 24.5793 3.41379L24.5793 21.1655L24.5793 21.1655Z" transform="translate(4.0965576 4.0965424)" id="Shape" fill="#3F51B5" stroke="none" />
+      <path d="M7.76159 8.19309L5.46206 8.19309L5.46206 17.0689L2.04827 17.0689L2.04827 8.19309L0 8.19309L0 5.46206L2.04827 5.46206L2.04827 3.81662C2.04964 1.4215 3.04442 0 5.86626 0L8.19309 0L8.19309 2.73103L6.63163 2.73103C5.53307 2.73103 5.46206 3.14069 5.46206 3.90742L5.46206 5.46206L8.19309 5.46206L7.76159 8.19309L7.76159 8.19309Z" transform="translate(15.70343 8.8758545)" id="Shape" fill="#FFFFFF" stroke="none" />
+    </g>
+  </g>
+</svg>
