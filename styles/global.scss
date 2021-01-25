@@ -9,6 +9,7 @@ $fourth: #679289;
 $semi: #f4c095;
 $shadow: 1px 2px 10px rgba(100, 100, 100, 0.5);
 $border: 10px;
+
 html,
 body {
   padding: 0;
@@ -26,8 +27,7 @@ body {
   margin: 0;
 }
 a {
-  color: inherit;
-  text-decoration: none;
+  color: $primary;
   &.link {
     &:hover {
       text-decoration: underline;
@@ -43,9 +43,14 @@ a {
   width: 100%;
   max-width: 1400px;
 }
-
+p {
+  line-height: 1.7;
+}
 .primary {
   background: $primary;
+}
+.text-primary {
+  color: $primary;
 }
 .btn {
   padding: 0.5rem 0.5rem;
@@ -54,12 +59,19 @@ a {
   cursor: pointer;
   font-size: 1rem;
   color: white;
+  text-decoration: none;
   display: inline-block;
   transition: 0.3s;
   box-shadow: $shadow;
   &:hover {
     box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.5);
     transform: translateY(-2px);
+  }
+  &:disabled {
+    cursor: default;
+  }
+  svg {
+    width: 20px;
   }
 }
 
@@ -104,12 +116,15 @@ section {
   }
 }
 @import './components/navbar';
+@import './components/spinner';
+
+// SEctions
 @import './sections/skills';
 @import './sections/header';
 @import './sections/works';
 @import './sections/contact';
-@import './components/spinner';
 @import './sections/blog';
+@import './sections/about';
 // Tooltip
 [data-tooltip] {
   position: relative;
@@ -146,6 +161,7 @@ footer {
   padding: 1rem;
   text-align: center;
   a {
+    color: white;
     text-decoration: underline;
   }
 }

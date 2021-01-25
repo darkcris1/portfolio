@@ -11,6 +11,10 @@ nav {
   color: white;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
+  a {
+    color: white;
+    text-decoration: none;
+  }
   &.scrolled {
     background: $fourth;
     box-shadow: -29px -22px 28px -20px rgba(0, 0, 0),
@@ -19,6 +23,7 @@ nav {
   @include responsive('medium') {
     justify-content: space-around;
   }
+
   .nav-links {
     display: flex;
     list-style-type: none;
