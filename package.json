@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "json-msg": "^1.1.2",
     "marked": "^1.2.7",
     "next": "10.0.4",
+    "nodemailer": "^6.4.17",
     "prismjs": "^1.22.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
