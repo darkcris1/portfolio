@@ -53,13 +53,15 @@ export async function getStaticProps() {
     const path = paths[i]
     const { default: markdown } = await import(`../../blogposts/${path}.md`)
     const vars = mdParse(markdown).vars
-    vars.link = 'blog/' + path
+    vars.link = '/blog/' + path
     data.push(vars)
   }
-
+  const sortedData = data.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
   return {
     props: {
-      blogposts: data,
+      blogposts: sortedData,
     },
   }
 }

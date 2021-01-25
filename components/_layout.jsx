@@ -1,8 +1,9 @@
+import Img from './common/Img'
 import SEO from './common/SEO'
 import Footer from './Footer'
 import Navbar from './Navbar'
 const navData = {
-  logo: <h1> Logo</h1>,
+  logo: <h1>Cris ....</h1>,
   links: [
     { href: '/', text: 'Home' },
     { href: '/about', text: 'About' },
@@ -25,7 +26,7 @@ const Layout = ({ title, children }) => {
         ></script>
         <link rel="shortcut icon" href="./logo.svg" type="image/svg" />
         <link rel="manifest" href="manifest.json" />
-        <script async src="fontawesome.js"></script>
+        <script defer src="fontawesome.js"></script>
       </SEO>
       <Navbar data={navData} />
       {children}

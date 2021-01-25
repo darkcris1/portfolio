@@ -11,7 +11,7 @@ const slug = ({ data }) => {
       <Header image={image} title={title} subText={description}>
         <div>
           <span className="mr-2">
-            {author} on {date}
+            <strong>{author}</strong> on {date}
           </span>
         </div>
       </Header>

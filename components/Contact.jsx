@@ -1,16 +1,65 @@
-import React, { useEffect } from 'react'
+import jm from 'json-msg'
+import React, { useEffect, useState } from 'react'
 import onViewport from '../utils/onViewport'
+import Input from './common/Input'
 import Link from './common/Link'
+import Spinner from './common/Spinner'
 
 const Contact = () => {
+  const [data, setData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+  const [error, setError] = useState({})
+  const [loading, setLoading] = useState(false)
+
+  const dataSchema = {
+    name: jm.str({ min: 4, max: 20, alphanum: true }),
+    email: jm.str({ email: true, max: 50 }),
+    message: jm.str({ min: 10, max: 255 }),
+  }
+
+  function handleChange({ target }) {
+    const value = target.value
+    setData((prevData) => {
+      const cloneData = { ...prevData }
+      cloneData[target.name] = value
+      return cloneData
+    })
+    const error = jm.validate(value, dataSchema[target.name])
+    setError((prevError) => {
+      prevError[target.name] = error
+      return prevError
+    })
+  }
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const errors = jm.validate(data, dataSchema, { abortEarly: false })
+    if (errors) return setError(errors)
+
+    setError({})
+    setLoading(true)
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    const result = await res.text()
+    setLoading(false)
+    alert(result)
+    setData({ name: '', email: '', message: '' })
+  }
   useEffect(() => {
     const elems = document.querySelectorAll('.paragraphs > *, form > *')
-    const observer = onViewport(elems, (el, i) => {
+    onViewport(elems, (el, i) => {
       el.style.animationDelay = i * 100 + 'ms'
       el.className += ' scale-in-ver-bottom'
     })
-    return observer.clean
-  })
+  }, [])
+
   return (
     <section className="contact-section">
       <div className="contact-body">
@@ -31,30 +80,36 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-        <form method="POST" action="api/contact">
+        <form onSubmit={handleSubmit}>
           <h1>Contact</h1>
-          <input
-            type="text"
-            required
+          <Input
+            onChange={handleChange}
+            value={data.name}
             name="name"
-            className="name-input"
-            placeholder="Name"
+            error={error.name}
           />
-          <input
-            type="email"
+          <Input
+            onChange={handleChange}
             name="email"
-            required
-            className="name-input"
-            placeholder="Email"
+            value={data.email}
+            error={error.email}
           />
-          <textarea
+          <Input
+            textarea={true}
+            value={data.message}
+            onChange={handleChange}
+            error={error.message}
             name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Messages..."
-          ></textarea>
-          <button className="btn primary">Send</button>
+          />
+          <button type="submit" disabled={loading} className="btn primary">
+            {loading ? (
+              <Spinner color="white" size="16px" />
+            ) : (
+              <div>
+                Send <i className="fas fa-paper-plane"></i>
+              </div>
+            )}
+          </button>
         </form>
       </div>
     </section>

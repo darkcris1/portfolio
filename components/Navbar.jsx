@@ -18,7 +18,7 @@ const Navbar = ({ data }) => {
     // Initialize in first load
     navScroll.apply(window)
     window.onscroll = navScroll
-  })
+  }, [])
   const burgerClass = classNames('burger', { show })
   return (
     <nav ref={nav} style={{ boxShadow: '' }}>
