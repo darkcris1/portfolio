@@ -15,7 +15,10 @@ const index = ({ blogposts }) => {
   }
   return (
     <>
-      <SEO title="This is blog" />
+      <SEO
+        title="Blogposts"
+        description="Knowledge is shareable and I am happy to share it to you"
+      />
       <Header
         title="Blog"
         subText="I will share all my knowledge especially in technologies"

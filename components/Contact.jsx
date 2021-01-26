@@ -102,13 +102,7 @@ const Contact = () => {
             name="message"
           />
           <button type="submit" disabled={loading} className="btn primary">
-            {loading ? (
-              <Spinner color="white" size="16px" />
-            ) : (
-              <div>
-                Send <i className="fas fa-paper-plane"></i>
-              </div>
-            )}
+            {loading ? <Spinner color="white" size="16px" /> : 'Send'}
           </button>
         </form>
       </div>
