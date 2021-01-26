@@ -11,6 +11,7 @@ Follow the steps below:
 
 - Obviously , you need an android phone
 - Download [Termux](https://play.google.com/store/apps/details?id=com.termux.app) on playstore
+- After you download it follow the steps below
 
 Type
 
@@ -28,9 +29,9 @@ $ pkg install nodejs-lts
 
 > I recommend the latest version cause its far more stable
 
-After NodeJS will Successfully installed
+After NodeJS is installed
 
-Check the version of node to validate if the nodejs succesfullyt installed
+Check the version of node to validate if the nodejs is succesfully installed
 
 ```bash
 $ node -v

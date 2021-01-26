@@ -1,7 +1,8 @@
 --vars
 title: "How to run mongodb on android",
 description: "Running mongo db on the go with DORY on android",
-date: "Jan 24, 2021"
+date: "Jan 24, 2021",
+image: "https://cdn.worldvectorlogo.com/logos/mongodb.svg"
 --
 
 **MongoDB** (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas.
@@ -32,3 +33,7 @@ mongoose
   })
   .then(() => 'MongoDB Connected')
 ```
+
+> Run this using **Termux** on android
+
+If you don't know how to run node in android read this [How to install NodeJS on android](/blog/how-to-run-nodejs-in-android)
