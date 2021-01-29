@@ -13,11 +13,13 @@ how you can easily validate form on javascript.
 
 I use my own package called **[json-msg](https://json-msg.vercel.app)** you can visit the documentation if you want to learn more about it. If you are familiar of joi validation this might be easier to you.
 
-Installation
+## Installation
 
 ```bash
 $ npm i json-msg
 ```
+
+## Usage
 
 ### First, you need to design a schema.
 
