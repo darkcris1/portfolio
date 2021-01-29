@@ -2,6 +2,7 @@
   "name": "docs-site-template",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "calerts": "^1.1.9",
     "classnames": "^2.2.6",
     "json-msg": "^1.1.2",
     "marked": "^1.2.7",

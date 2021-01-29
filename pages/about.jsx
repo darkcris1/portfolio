@@ -23,10 +23,9 @@ const about = () => {
             React/Next.js and Svelte.
           </p>
           <p>
-            At first I intended to be a front-end developer but my pulse was
-            truly more on programming. I try back-end development since it was
-            more on programming and building API from sratch using nodejs and
-            mongoDB. I decided to combine it to become a full stack developer.
+            At first I intended to be a web designer but my pulse was truly more
+            on programming. I tried back-end development since it was more on
+            programming and building API from sratch using nodejs and mongoDB.
           </p>
           <p>
             When building websites, I usually use Next.js as a default default

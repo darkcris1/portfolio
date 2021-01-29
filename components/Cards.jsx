@@ -26,7 +26,7 @@ const Cards = ({ data, btnText, size = 3, defaultImage, animation = true }) => {
           <div key={title + i} className="card">
             <div className="image-text">
               <Link href={link} className="image">
-                <Img src={image || defaultImage} alt="Blog sample picture" />
+                <Img src={image || defaultImage} alt="sample picture" />
               </Link>
               <div className="texts">
                 <h3 className="title">{title}</h3>

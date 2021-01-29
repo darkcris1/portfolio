@@ -19,8 +19,7 @@ export default function handler(req, res) {
       `,
     }
     transporter.sendMail(mailOptions, (err) => {
-      console.log(err)
-      if (err) return res.status(400).json({ message: 'Server Error' })
+      if (err) return res.status(400).send('Error Occured')
       return res.send('Email sent')
     })
   }

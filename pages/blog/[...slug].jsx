@@ -4,10 +4,13 @@ import Header from '../../components/Header'
 import SEO from '../../components/common/SEO'
 
 const slug = ({ data }) => {
-  const { title, description, image, date, author } = data.vars
+  const { title, description, image, date, author, css, js } = data.vars
   return (
     <>
-      <SEO title={title} description={description} />
+      <SEO title={title} description={description}>
+        {css && <link href={css} rel="stylesheet" />}
+        {js && <script src={js} defer></script>}
+      </SEO>
       <Header image={image} title={title} subText={description}>
         <div>
           <span className="mr-2">

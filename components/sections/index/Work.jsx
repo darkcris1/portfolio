@@ -16,10 +16,11 @@ const cards = [
     link: 'https://json-msg.vercel.app',
   },
   {
-    image: 'https://calert.vercel.app/logo.svg',
-    title: 'calert',
-    text: 'alternative for native alerts and sweetalerts',
-    link: 'https://calert.vercel.app',
+    image: 'https://clickers-game.netlify.app/',
+    title: 'clicker',
+    text: 'simple game on web',
+    link: 'https://clickers-game.netlify.app',
+    image: 'https://clickers-game.netlify.app/favicon/apple-touch-icon.png',
   },
 ]
 const Work = ({ githubData }) => {

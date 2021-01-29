@@ -16,7 +16,7 @@ nav {
     text-decoration: none;
   }
   &.scrolled {
-    background: $fourth;
+    background: rgba($fourth, 0.95);
     box-shadow: -29px -22px 28px -20px rgba(0, 0, 0),
       1px 10px 22px 0px rgba(0, 0, 0, 0.51);
   }

@@ -21,7 +21,7 @@ const index = ({ blogposts }) => {
       />
       <Header
         title="Blog"
-        subText="I will share all my knowledge especially in technologies"
+        subText="Knowledge is shareable and I am happy to share it to you"
       />
       <section className="blog-section">
         <Cards

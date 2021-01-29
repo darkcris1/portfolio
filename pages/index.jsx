@@ -7,12 +7,13 @@ import Banner from '../components/Banner'
 import Contact from '../components/Contact'
 
 const index = ({ githubData }) => {
+  const experience = new Date().getFullYear() - 2020
   return (
     <>
       <SEO title="Home" description="Basic" />
       <Header
         title="Cris Fandino Jr. "
-        subText="I am web developer with 1 year of experience"
+        subText={`I am web developer with ${experience} year of experience`}
       >
         <div className="button my-2">
           <Link href="/#" className="btn primary mr-2">

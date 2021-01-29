@@ -24,7 +24,7 @@ const Layout = ({ title, children }) => {
           defer
           src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"
         ></script>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="logo.svg" type="image/svg" />
         <link rel="manifest" href="manifest.json" />
         <script defer src="fontawesome.js"></script>
       </SEO>
