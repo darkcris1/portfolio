@@ -48,6 +48,9 @@ p {
 }
 .primary {
   background: $primary;
+  :disabled {
+    background: darken($primary, 10%);
+  }
 }
 .text-primary {
   color: $primary;
