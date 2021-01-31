@@ -1,5 +1,5 @@
 --vars
-title: "Svelte will be the next framework king and not React",
+title: "Svelte is better than react",
 description: "Everything you need to know about svelte",
 image: "https://github.com/sveltejs/branding/blob/master/svelte-logo.svg?raw=true",
 date: "Jan 24, 2021"
@@ -49,7 +49,7 @@ function Counter() {
 export default Counter
 ```
 
-As you can see svelte svelte follow the will of jquery **write less, do more** as stated by Rich Harris.
+As you can see svelte follow the will of jquery **write less, do more** as stated by Rich Harris.
 In react you need export the specific component as default, but in Svelte it was automatically exported and it follow the rule of 1 file 1 component.
 
 # Conclusion
