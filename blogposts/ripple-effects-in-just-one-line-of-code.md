@@ -44,9 +44,11 @@ On browser
 <button id="rippleBtn" style="padding: .35rem .5rem; color: white; background: blue;border: none;border-radius: 5px;font-size: 1rem;">Ripple</button>
 
 <script>
-  window.onload = ()=> ripple("#rippleBtn", {
-    background: 'yellow',
-  })
+  window.onload = function() {
+    ripple("#rippleBtn", {
+      background: 'yellow',
+    })
+  }
 </script>
 
 ### You can view the demo here
