@@ -16,11 +16,10 @@ const cards = [
     link: 'https://json-msg.vercel.app',
   },
   {
-    image: 'https://clickers-game.netlify.app/',
+    image: 'assets/clicker.png',
     title: 'clicker',
     text: 'simple game on web',
     link: 'https://clickers-game.netlify.app',
-    image: 'https://clickers-game.netlify.app/favicon/apple-touch-icon.png',
   },
 ]
 const Work = ({ githubData }) => {
@@ -28,7 +27,7 @@ const Work = ({ githubData }) => {
     <section className="work-section">
       <h1>Works</h1>
       <GithubCard data={githubData} />
-      <img src="/card-bg.svg" alt="ard background" className="card-bg" />
+      <img src="assets/card-bg.svg" alt="ard background" className="card-bg" />
       <Cards data={cards} />
     </section>
   )

@@ -11,7 +11,7 @@ const about = () => {
       <section className="about-section">
         <div className="avatar">
           {/* <Spinner /> */}
-          <Img src="/my-picture-transparent.png" />
+          <Img src="assets/my-picture-transparent.png" />
         </div>
         <div className="paragraph">
           <h1>Hi! I am Cris Fandiño Jr.</h1>

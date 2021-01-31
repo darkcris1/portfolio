@@ -4,7 +4,6 @@ import onViewport from '../utils/onViewport'
 import Input from './common/Input'
 import Link from './common/Link'
 import Spinner from './common/Spinner'
-import Head from 'next/head'
 
 jm.defaultMessage({
   string: {
@@ -54,7 +53,9 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
     const result = await res.text()
+    const { default: calert } = await import('calerts')
     setLoading(false)
+
     calert({
       icon: res.status === 200 ? 'success' : 'error',
       title: result,
@@ -72,57 +73,52 @@ const Contact = () => {
   }, [])
 
   return (
-    <>
-      <Head>
-        <script src="https://unpkg.com/calerts@1.1.9/dist/calert.umd.min.js"></script>
-      </Head>
-      <section className="contact-section">
-        <div className="contact-body">
-          <div className="paragraphs">
-            <h2>I am happy to hear if you are interested of my works</h2>
-            <p>
-              You can contact me anytime via this form, make sure your email is
-              correct so I can get in touch to you immediately after I received
-              the mails.
-            </p>
-            <h4>You can also contact me via the following:</h4>
-            <div className="account-list">
-              <Link href="https://facebook.com/crisjunjun123">
-                <img src="/facebook.svg" width="50" alt="" />
-              </Link>
-              <Link href="mailto:sircnujnuj@gmail.com?subject=Get in touch">
-                <img src="/gmail.svg" width="50" alt="" />
-              </Link>
-            </div>
+    <section className="contact-section">
+      <div className="contact-body">
+        <div className="paragraphs">
+          <h2>I am happy to hear if you are interested of my works</h2>
+          <p>
+            You can contact me anytime via this form, make sure your email is
+            correct so I can get in touch to you immediately after I received
+            the mails.
+          </p>
+          <h4>You can also contact me via the following:</h4>
+          <div className="account-list">
+            <Link href="https://facebook.com/crisjunjun123">
+              <img src="icons/facebook.svg" width="50" alt="" />
+            </Link>
+            <Link href="mailto:sircnujnuj@gmail.com?subject=Get in touch">
+              <img src="icons/gmail.svg" width="50" alt="" />
+            </Link>
           </div>
-          <form onSubmit={handleSubmit}>
-            <h1>Contact</h1>
-            <Input
-              onChange={handleChange}
-              value={data.name}
-              name="name"
-              error={error.name}
-            />
-            <Input
-              onChange={handleChange}
-              name="email"
-              value={data.email}
-              error={error.email}
-            />
-            <Input
-              textarea={true}
-              value={data.message}
-              onChange={handleChange}
-              error={error.message}
-              name="message"
-            />
-            <button type="submit" disabled={loading} className="btn primary">
-              {loading ? <Spinner color="white" size="16px" /> : 'Send'}
-            </button>
-          </form>
         </div>
-      </section>
-    </>
+        <form onSubmit={handleSubmit}>
+          <h1>Contact</h1>
+          <Input
+            onChange={handleChange}
+            value={data.name}
+            name="name"
+            error={error.name}
+          />
+          <Input
+            onChange={handleChange}
+            name="email"
+            value={data.email}
+            error={error.email}
+          />
+          <Input
+            textarea={true}
+            value={data.message}
+            onChange={handleChange}
+            error={error.message}
+            name="message"
+          />
+          <button type="submit" disabled={loading} className="btn primary">
+            {loading ? <Spinner color="white" size="16px" /> : 'Send'}
+          </button>
+        </form>
+      </div>
+    </section>
   )
 }
 

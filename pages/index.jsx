@@ -29,21 +29,25 @@ const index = ({ githubData }) => {
             href="https://www.sololearn.com/Profile/17777591"
             target="_blank"
           >
-            <img src="/sololearn.svg" alt="facebook link" />
+            <img src="icons/sololearn.svg" alt="facebook link" />
           </Link>
           <Link
             data-tooltip="Github"
             href="https://github.com/darkcris1"
             target="_blank"
           >
-            <img data-tooltip="Facebook" src="/github.svg" alt="github link" />
+            <img
+              data-tooltip="Facebook"
+              src="icons/github.svg"
+              alt="github link"
+            />
           </Link>
           <Link
             data-tooltip="Codewars"
             href="https://www.codewars.com/users/darkcris1"
             target="_blank"
           >
-            <img src="/codewars.svg" alt="github link" />
+            <img src="icons/codewars.svg" alt="github link" />
           </Link>
         </div>
       </Header>

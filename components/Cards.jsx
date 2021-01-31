@@ -5,8 +5,6 @@ import Link from './common/Link'
 import Img from './common/Img'
 
 const Cards = ({ data, btnText, size = 3, defaultImage, animation = true }) => {
-  const { asPath } = useRouter()
-
   const computedData = data.slice(0, size)
   useEffect(() => {
     if (!animation) return
@@ -16,7 +14,7 @@ const Cards = ({ data, btnText, size = 3, defaultImage, animation = true }) => {
       el.className += ' bounce-in-fwd'
     })
     return () => observer.clean()
-  })
+  }, [])
 
   return (
     <div className="cards mt-2">
