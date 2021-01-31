@@ -1,19 +1,24 @@
-import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import onViewport from '../utils/onViewport'
 import Link from './common/Link'
 import Img from './common/Img'
 
-const Cards = ({ data, btnText, size = 3, defaultImage, animation = true }) => {
+const Cards = ({
+  data,
+  alt,
+  btnText,
+  size = 3,
+  defaultImage,
+  animation = true,
+}) => {
   const computedData = data.slice(0, size)
   useEffect(() => {
     if (!animation) return
     const cards = document.querySelectorAll('.cards .card')
-    const observer = onViewport(cards, (el, i) => {
+    onViewport(cards, (el, i) => {
       el.style.animationDelay = i * 100 + 'ms'
       el.className += ' bounce-in-fwd'
     })
-    return () => observer.clean()
   }, [])
 
   return (
@@ -24,7 +29,10 @@ const Cards = ({ data, btnText, size = 3, defaultImage, animation = true }) => {
           <div key={title + i} className="card">
             <div className="image-text">
               <Link href={link} className="image">
-                <Img src={image || defaultImage} alt="sample picture" />
+                <Img
+                  src={image || defaultImage}
+                  alt={alt || 'sample picture'}
+                />
               </Link>
               <div className="texts">
                 <h3 className="title">{title}</h3>

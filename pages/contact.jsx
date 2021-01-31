@@ -6,8 +6,11 @@ import SEO from '../components/common/SEO'
 const contact = () => {
   return (
     <>
-      <SEO title="Contact" />
-      <Header title="Contact" subText="Get in touch if you have any offer" />
+      <SEO
+        title="Contact"
+        description="Get in touch to me if you have inquiries"
+      />
+      <Header title="Contact" subText="Get in touch to me" />
       <Contact />
     </>
   )

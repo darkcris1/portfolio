@@ -15,7 +15,7 @@ const Header = ({ title, subText, children, image, ...props }) => {
   return (
     <div
       className="header-background"
-      style={{ '--url': `url(${image || 'assets/fr.png'})` }}
+      style={{ '--url': `url(${image || '/assets/fr.png'})` }}
       {...props}
     >
       <div className="content">

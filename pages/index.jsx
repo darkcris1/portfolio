@@ -12,11 +12,14 @@ const index = ({ githubData }) => {
     <>
       <SEO title="Home" description="Basic" />
       <Header
-        title="Cris Fandino Jr. "
+        title="Cris Fandio Jr. "
         subText={`I am web developer with ${experience} year of experience`}
       >
         <div className="button my-2">
-          <Link href="/#" className="btn primary mr-2">
+          <Link
+            href="https://drive.google.com/file/d/1GhRvrLb3uc1p6IWcZY-R1lUgGJaUQTfK/view"
+            className="btn primary mr-2"
+          >
             View CV
           </Link>
           <Link href="/contact" className="btn primary wobble-hor-top">
@@ -29,18 +32,14 @@ const index = ({ githubData }) => {
             href="https://www.sololearn.com/Profile/17777591"
             target="_blank"
           >
-            <img src="icons/sololearn.svg" alt="facebook link" />
+            <img src="icons/sololearn.svg" alt="sololearn link" />
           </Link>
           <Link
             data-tooltip="Github"
             href="https://github.com/darkcris1"
             target="_blank"
           >
-            <img
-              data-tooltip="Facebook"
-              src="icons/github.svg"
-              alt="github link"
-            />
+            <img src="icons/github.svg" alt="github link" />
           </Link>
           <Link
             data-tooltip="Codewars"

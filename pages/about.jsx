@@ -1,16 +1,17 @@
 import SEO from '../components/common/SEO'
 import Img from '../components/common/Img'
-import Spinner from '../components/common/Spinner'
 import Header from '../components/Header'
 
 const about = () => {
   return (
     <>
-      <SEO title="About Me 😁"></SEO>
+      <SEO
+        title="About Me 😁"
+        description="Cris Fandino Jr. A Brief introduction about my self"
+      ></SEO>
       <Header title="About" subText="Brief introduction about my self" />
       <section className="about-section">
         <div className="avatar">
-          {/* <Spinner /> */}
           <Img src="assets/my-picture-transparent.png" />
         </div>
         <div className="paragraph">
@@ -30,7 +31,7 @@ const about = () => {
           <p>
             When building websites, I usually use Next.js as a default default
             framework for faster development. I built some my own libraries in
-            npm packages as you can see on my{' '}
+            npm packages as you can see on my
             <a href="https://github.com/darkcris1">Github</a> Page
           </p>
         </div>

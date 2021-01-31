@@ -17,7 +17,7 @@ const index = ({ blogposts }) => {
     <>
       <SEO
         title="Blogposts"
-        description="Knowledge is shareable and I am happy to share it to you"
+        description="Cris Fandino blog website, sKnowledge is shareable and I am happy to share it to you"
       />
       <Header
         title="Blog"
@@ -30,6 +30,7 @@ const index = ({ blogposts }) => {
           size={size}
           defaultImage={'/logo.svg'}
           animation={false}
+          alt="blog cover image"
         />
         {isFull && (
           <Link

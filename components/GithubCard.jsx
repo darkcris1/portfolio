@@ -23,7 +23,9 @@ const GithubCard = ({ data }) => {
       </div>
       <div className="content">
         <div className="user">
-          <Link hre="https://github.com/darkcris1">github/{login}</Link>
+          <Link href="https://github.com/darkcris1" alt="github avatar">
+            github/{login}
+          </Link>
         </div>
         <div className="bio">{bio}</div>
         <div className="counts">

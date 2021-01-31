@@ -1,9 +1,9 @@
-import Img from './common/Img'
 import SEO from './common/SEO'
 import Footer from './Footer'
 import Navbar from './Navbar'
+
 const navData = {
-  logo: <h1>Cris ....</h1>,
+  logo: <h1>Cris....</h1>,
   links: [
     { href: '/', text: 'Home' },
     { href: '/about', text: 'About' },
@@ -20,12 +20,9 @@ const Layout = ({ title, children }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-vsc-dark-plus.css"
         />
-        <script
-          defer
-          src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"
-        ></script>
-        <link rel="icon" href="logo.svg" type="image/svg" />
+        <link rel="icon" href="icons/logo.svg" type="image/svg" />
         <link rel="manifest" href="manifest.json" />
+        <link rel="canonical" href="" />
         <script defer src="fontawesome.js"></script>
       </SEO>
       <Navbar data={navData} />

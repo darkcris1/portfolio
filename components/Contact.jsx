@@ -32,6 +32,7 @@ const Contact = () => {
       cloneData[target.name] = value
       return cloneData
     })
+
     const error = jm.validate(value, dataSchema[target.name])
     setError((prevError) => {
       prevError[target.name] = error

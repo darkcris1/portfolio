@@ -18,7 +18,7 @@ const cards = [
   {
     image: 'assets/clicker.png',
     title: 'clicker',
-    text: 'simple game on web',
+    text: 'Test your eyes and clicking speed on this simple game',
     link: 'https://clickers-game.netlify.app',
   },
 ]
@@ -28,7 +28,7 @@ const Work = ({ githubData }) => {
       <h1>Works</h1>
       <GithubCard data={githubData} />
       <img src="assets/card-bg.svg" alt="ard background" className="card-bg" />
-      <Cards data={cards} />
+      <Cards data={cards} alt="sample picture of site" />
     </section>
   )
 }
