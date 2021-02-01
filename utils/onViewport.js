@@ -12,7 +12,6 @@ function onViewport(elem, callback, options = {}) {
       }
     })
   }, options)
-
   elem.forEach((el) => {
     observer.observe(el)
   })

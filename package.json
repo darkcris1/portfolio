@@ -9,7 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
-    "calerts": "^1.1.9",
+    "calerts": "^1.1.10",
     "classnames": "^2.2.6",
     "json-msg": "^1.1.2",
     "marked": "^1.2.7",
