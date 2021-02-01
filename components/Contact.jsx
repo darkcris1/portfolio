@@ -4,6 +4,7 @@ import onViewport from '../utils/onViewport'
 import Input from './common/Input'
 import Link from './common/Link'
 import Spinner from './common/Spinner'
+import calert from 'calerts'
 
 jm.defaultMessage({
   string: {
@@ -54,7 +55,6 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
     const result = await res.text()
-    const { default: calert } = await import('calerts')
     setLoading(false)
 
     calert({

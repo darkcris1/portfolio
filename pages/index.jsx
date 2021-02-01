@@ -12,7 +12,7 @@ const index = ({ githubData }) => {
     <>
       <SEO title="Home" description="Basic" />
       <Header
-        title="Cris Fandio Jr. "
+        title="Cris Fandiño Jr. "
         subText={`I am web developer with ${experience} year of experience`}
       >
         <div className="button my-2">

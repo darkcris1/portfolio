@@ -1,8 +1,17 @@
 import SEO from '../components/common/SEO'
 import Img from '../components/common/Img'
 import Header from '../components/Header'
+import { useEffect } from 'react'
+import onViewport from '../utils/onViewport'
 
 const about = () => {
+  useEffect(() => {
+    const elems = document.querySelectorAll('.about-section .paragraph > *')
+    onViewport(elems, (el, i) => {
+      el.style.animationDelay = i * 100 + 'ms'
+      el.className += ' scale-in-ver-bottom'
+    })
+  }, [])
   return (
     <>
       <SEO
@@ -31,7 +40,7 @@ const about = () => {
           <p>
             When building websites, I usually use Next.js as a default default
             framework for faster development. I built some my own libraries in
-            npm packages as you can see on my
+            npm packages as you can see on my{' '}
             <a href="https://github.com/darkcris1">Github</a> Page
           </p>
         </div>
