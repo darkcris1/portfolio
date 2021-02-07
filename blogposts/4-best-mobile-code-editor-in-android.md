@@ -20,7 +20,7 @@ as stated on the description.
 ### Pros
 
 - Excellent Workspace
-- There are few Templates
+- There are frameworks Templates
 - Support Emmet
 - Lightweight
 - Convenient Quick Tools
@@ -49,7 +49,7 @@ on mobile but spck team make it possible to work on mobile.
 - Lightweight
 - Convenient Quick Tools
 - Excellent debugging tools
-- Great Git Source control
+- Git Source control
 - Support Emmet
 
 ### Cons
@@ -74,7 +74,7 @@ Code editor has similarity on acode cause it uses the same editor library called
 
 ### Cons
 
-- Cannot work on direct storage
+- Workspace is not good
 - ADS
 
 ## 4. [VHEditor - Programming on Android](https://play.google.com/store/apps/details?id=vn.vhn.vsc)
@@ -82,6 +82,8 @@ Code editor has similarity on acode cause it uses the same editor library called
 VHEditor runs on code server on your device so you can use VSCode directly on your phone. This like a port
 so you can use VSCode in your android. This is best if you have external keyboard and mouse, but if you haven't it's a waste
 of time to download it.
+
+![Preview](https://play-lh.googleusercontent.com/sMJzdLn9iRdpLer-ExOcLzuxkjt9QR6hJdgYWiKwiAY4QjCO6pILSCaUVmipNUOBev8=w1304-h669-rw)
 
 ### Pros
 
@@ -92,6 +94,4 @@ of time to download it.
 
 - Not Working Very Well on touch devices
 - Heavy App
-- Might not working on low-level phones
-
-![Preview](https://play-lh.googleusercontent.com/sMJzdLn9iRdpLer-ExOcLzuxkjt9QR6hJdgYWiKwiAY4QjCO6pILSCaUVmipNUOBev8=w1304-h669-rw)
+- Might not work on low-level phones

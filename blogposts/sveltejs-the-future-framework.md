@@ -5,11 +5,11 @@ image: "https://github.com/sveltejs/branding/blob/master/svelte-logo.svg?raw=tru
 date: "Jan 24, 2021"
 --
 
-A lot of frameworks popular this days especially the most dominating among the all the frameworks **React**. I know React is a library if you are just using pure Javascript and not jsx. React
-is matured enough and tons of website made by it. But, there is still some drawbacks about this framework especially the
-size. A lot of them says "**React is a lightweight library**" , I think twice why the hell React is lightweight, **React DOM** is almost **110 kb** size minified version. There was even a ditch that if you load your react website the first time it load you will watching loading spinner for 5 seconds or even higher in slower connection.
+A lot of frameworks popular this days especially the **React** that made by facebook in 2013 which dominate the market . I know React is a library if you are just using pure Javascript and not jsx. React
+is matured enough and tons of website made using it. But, there is still some drawbacks about this framework especially the
+size. A lot of them says "**React is a lightweight library**" , I think twice 🤔, why the hell React is lightweight, **React DOM** is almost **110 kb** size minified version. There was even a ditch about this, if you load your react website for the first time watching spinner for 5 seconds or even higher in slower connection is such an annoying experience.
 
-After I learned React, I tried **Vue** and I am not satisfied to it, it feels weird to me cause some of the conditions are put on the strings not on the curly brackets like I usually do in React. Then, I found **Svelte** , first I doubt the capabalities of svelte and hate it at the first sight cause there's a syntactic sugar that I don't like. But, after I tried it there's nothing bad I can tell, everytihng is good and expected.
+After I learned React, I tried **Vue** and I am not satisfied on it, it feels weird to me cause you need to put the logic on the strings and not on the curly brackets like I usually do in React. Then, I found **Svelte** , first I doubt the capabalities of svelte and hate it at the first sight cause there's a syntactic sugar that I don't like. But, after I tried it there's nothing bad I can tell, everything is good and expected.
 
 ### Things that I like in Svelte
 
