@@ -15,7 +15,7 @@ const about = () => {
   return (
     <>
       <SEO
-        title="About Me 😁"
+        title="About Me | Cris Fandiño Jr."
         description="Cris Fandino Jr. A Brief introduction about my self"
       ></SEO>
       <Header title="About" subText="Brief introduction about my self" />
@@ -29,8 +29,8 @@ const about = () => {
             I am 18 years old from the Philippines a self taught web developer
             with 1 year of experience. I build websites according to web
             standards guidelines. I have experience few of the languages and
-            frameworks such as HTML, CSS ,Javascript, Nodejs, Bootstrap, Sass
-            React/Next.js and Svelte.
+            frameworks such as HTML, CSS ,Javascript, Nodejs, Bootstrap,
+            TailwindCSS, Sass, React/Next.js and Svelte.
           </p>
           <p>
             At first I intended to be a web designer but my pulse was truly more
@@ -40,7 +40,7 @@ const about = () => {
           <p>
             When building websites, I usually use Next.js as a default default
             framework for faster development. I built some my own libraries in
-            npm packages as you can see on my{' '}
+            npm as you can see on my{' '}
             <a href="https://github.com/darkcris1">Github</a> Page
           </p>
         </div>

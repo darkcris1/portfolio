@@ -16,10 +16,10 @@ const cards = [
     link: 'https://json-msg.vercel.app',
   },
   {
-    image: 'assets/clicker.png',
-    title: 'clicker',
-    text: 'Test your eyes and clicking speed on this simple game',
-    link: 'https://clickers-game.netlify.app',
+    image: 'https://chatterify.herokuapp.com/logo.svg',
+    title: 'chatterify',
+    text: 'Real time chat application that can create a unique room',
+    link: 'https://chatterify.herokuapp.com/',
   },
 ]
 const Work = ({ githubData }) => {
