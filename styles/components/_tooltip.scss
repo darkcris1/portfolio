@@ -1,0 +1,21 @@
+[data-tooltip] {
+  position: relative;
+  &:hover:after {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+  &:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: calc(-100% - 0.4rem);
+    background: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+    transform-origin: bottom left;
+    transform: translateY(50%) scale(0);
+  }
+}

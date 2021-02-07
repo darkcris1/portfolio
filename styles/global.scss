@@ -120,6 +120,7 @@ section {
 }
 @import './components/navbar';
 @import './components/spinner';
+@import './components/tooltip';
 
 // SEctions
 @import './sections/skills';
@@ -129,27 +130,6 @@ section {
 @import './sections/blog';
 @import './sections/about';
 // Tooltip
-[data-tooltip] {
-  position: relative;
-  &:hover:after {
-    transform: translate(0) scale(1);
-    opacity: 1;
-  }
-  &:after {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: calc(-100% - 0.4rem);
-    background: black;
-    color: white;
-    padding: 0.2rem;
-    border-radius: 5px;
-    left: 0;
-    opacity: 0;
-    transition: 0.3s;
-    transform-origin: bottom left;
-    transform: translateY(50%) scale(0);
-  }
-}
 
 .banner {
   width: 100%;
@@ -167,4 +147,13 @@ footer {
     color: white;
     text-decoration: underline;
   }
+}
+
+#nprogress .bar {
+  background: $primary !important;
+  height: 5px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px 0 $primary, 0 0 5px 0 $primary !important;
 }
