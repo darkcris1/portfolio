@@ -20,18 +20,7 @@ marked.setOptions({
   },
 })
 
-// function converToObject(str) {
-//   return str
-//     .trim()
-//     .split(/\n/)
-//     .reduce((acc, val) => {
-//       const [key, value] = val.split(':')
-//       acc[key] = value.trim()
-//       return acc
-//     }, {})
-// }
-
-// Conver vars into javascript object
+// Convert vars into javascript object
 function converToObject(str) {
   return Function(`"use strict"; return ({${str.trim()}}) `)()
 }
