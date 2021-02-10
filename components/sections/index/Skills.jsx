@@ -61,21 +61,22 @@ const Skills = () => {
           <h1 className="title">Service</h1>
           <ul className="service-list">
             <li>
-              <img src="icons/check.svg" alt="check image" />
+              <i className="far fa-check-circle mr-1"></i>
+              {/* <img src="icons/check.svg" alt="check image" /> */}
               <span>Front-End Development</span>
             </li>
             <li>
-              <img src="icons/check.svg" alt="check image" />
+              <i className="far fa-check-circle mr-1"></i>
               <span>Back-End Development</span>
             </li>
             <li>
-              <img src="icons/check.svg" alt="check image" />
+              <i className="far fa-check-circle mr-1"></i>
               <span>Blogging</span>
             </li>
           </ul>
         </div>
         <div className="computer-vector">
-          <Img src="assets/web-developer.svg" alt="" className="laptop boy" />
+          <Img src="assets/web-developer.svg" alt="laptop boy" />
         </div>
       </section>
     </>

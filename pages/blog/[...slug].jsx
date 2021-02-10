@@ -20,7 +20,7 @@ const slug = ({ data }) => {
       </Header>
       <section className="blog-slug-section" style={{ textAlign: 'left' }}>
         <main>
-          <div
+          <article
             className="markdown"
             dangerouslySetInnerHTML={{ __html: data.html }}
           />

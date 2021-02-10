@@ -23,7 +23,7 @@ const about = () => {
         <div className="avatar">
           <Img src="assets/my-picture-transparent.png" />
         </div>
-        <div className="paragraph">
+        <article className="paragraph">
           <h1>Hi! I am Cris Fandiño Jr.</h1>
           <p>
             I am 18 years old from the Philippines a self taught web developer
@@ -43,7 +43,7 @@ const about = () => {
             npm as you can see on my{' '}
             <a href="https://github.com/darkcris1">Github</a> Page
           </p>
-        </div>
+        </article>
       </section>
     </>
   )
