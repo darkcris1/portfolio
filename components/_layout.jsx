@@ -15,15 +15,9 @@ const Layout = ({ title, children }) => {
   return (
     <div className="container">
       <SEO title={title} description="Docs">
-        <meta name="theme-color" content="#dacb02" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-vsc-dark-plus.css"
-        />
-        <link rel="icon" href="icons/logo.svg" type="image/svg" />
-        <link rel="manifest" href="manifest.json" />
-        <link rel="canonical" href="" />
-        <script defer src="fontawesome.js"></script>
+        <meta name="theme-color" content="#ee2e31" />
+        <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
+        <link rel="manifest" href="/manifest.json" />
       </SEO>
       <Navbar data={navData} />
       {children}
