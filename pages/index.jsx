@@ -10,7 +10,9 @@ const index = ({ githubData }) => {
   const yearsOfExperience = new Date().getFullYear() - 2020
   return (
     <>
-      <SEO title="Home" description="Basic" />
+      <SEO title="Home" description="Basic">
+        <script async src="fontawesome.js"></script>
+      </SEO>
       <Header
         title="Cris Fandiño Jr. "
         subText={`I am web developer with ${yearsOfExperience} year of experience`}

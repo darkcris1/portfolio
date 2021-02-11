@@ -7,10 +7,11 @@ import onViewport from '../utils/onViewport'
 const about = () => {
   useEffect(() => {
     const elems = document.querySelectorAll('.about-section .paragraph > *')
-    onViewport(elems, (el, i) => {
+    const observer = onViewport(elems, (el, i) => {
       el.style.animationDelay = i * 100 + 'ms'
       el.className += ' scale-in-ver-bottom'
     })
+    return () => observer.clean()
   }, [])
   return (
     <>
@@ -21,7 +22,7 @@ const about = () => {
       <Header title="About" subText="Brief introduction about my self" />
       <section className="about-section">
         <div className="avatar">
-          <Img src="assets/my-picture-transparent.png" />
+          <Img src="/assets/my-picture-transparent.png" />
         </div>
         <article className="paragraph">
           <h1>Hi! I am Cris Fandiño Jr.</h1>

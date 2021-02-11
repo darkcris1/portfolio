@@ -6,12 +6,11 @@ const Banner = ({ title, link, linkLabel }) => {
   useEffect(() => {
     const elems = document.querySelectorAll('.banner > *')
 
-    const observer = onViewport(elems, (el, i) => {
+    onViewport(elems, (el, i) => {
       el.style.animationDelay = i * 200 + 'ms'
       el.className += ' scale-in-ver-bottom'
     })
-    return observer.clean
-  })
+  }, [])
   return (
     <div className="banner">
       <h1>{title}</h1>

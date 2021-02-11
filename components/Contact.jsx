@@ -67,10 +67,11 @@ const Contact = () => {
   }
   useEffect(() => {
     const elems = document.querySelectorAll('.paragraphs > *, form > *')
-    onViewport(elems, (el, i) => {
+    const observer = onViewport(elems, (el, i) => {
       el.style.animationDelay = i * 100 + 'ms'
       el.className += ' scale-in-ver-bottom'
     })
+    return () => observer.clean()
   }, [])
 
   return (

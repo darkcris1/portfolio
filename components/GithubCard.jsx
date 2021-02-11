@@ -9,23 +9,20 @@ const GithubCard = ({ data }) => {
     const cards = document.querySelectorAll(
       '.github-user > *, .github-user .content > *',
     )
-    const observer = onViewport(cards, (el, i) => {
+    onViewport(cards, (el, i) => {
       el.style.animationDelay = i * 200 + 'ms'
       el.className += ' scale-in-ver-bottom'
     })
-    return () => observer.clean()
-  })
+  }, [])
 
   return (
     <div className="github-user">
       <div className="avatar">
-        <img src={avatar_url} width="50" />
+        <img src={avatar_url} alt="github avatar" />
       </div>
       <div className="content">
         <div className="user">
-          <Link href="https://github.com/darkcris1" alt="github avatar">
-            github/{login}
-          </Link>
+          <Link href="https://github.com/darkcris1">github/{login}</Link>
         </div>
         <div className="bio">{bio}</div>
         <div className="counts">
