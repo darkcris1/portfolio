@@ -3,22 +3,24 @@ import { useEffect, useState, useRef } from 'react'
 import Spinner from './Spinner'
 import onViewport from '../../utils/onViewport'
 
-const Img = ({ src, ...rest }) => {
-  const [source, setSource] = useState('')
+const Img = ({ src, spinnerColor, ...rest }) => {
   const [loaded, setLoaded] = useState(false)
   const spinner = useRef(null)
 
   useEffect(() => {
     onViewport(spinner.current, () => {
-      setSource(src)
       const image = new Image()
       image.src = src
-      image.onload = () => setLoaded(true)
-
-      image.onerror = () => setLoaded(true)
+      image.onload = () => {
+        setLoaded(true)
+      }
     })
   }, [])
-  return loaded ? <img src={source} {...rest} /> : <Spinner ref={spinner} />
+  return loaded ? (
+    <img src={src} {...rest} />
+  ) : (
+    <Spinner ref={spinner} color={spinnerColor} />
+  )
 }
 
 export default Img
