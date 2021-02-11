@@ -10,6 +10,10 @@ const slug = ({ data }) => {
       <SEO title={title} description={description}>
         {css && <link href={css} rel="stylesheet" />}
         {js && <script src={js} defer></script>}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-vsc-dark-plus.css"
+        />
       </SEO>
       <Header image={image} title={title} subText={description}>
         <div>
