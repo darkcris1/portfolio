@@ -11,12 +11,12 @@ The day that I dont know anything about programming and my friend start talking 
 
 - First, I watch some videos in youtube to motivate myself
 - Then, I learn **html** and **CSS** , I spend almost 2 weeks to master this two
-- After that I learn the basics of Javascript , this is where the programming begins
-  but that's only in the beginning, just like in mathematics there are **operators**, **statements**,**problem solvings**
+- After that, I learn the basics of Javascript , this is where the programming begins
+  but that's only in the beginning, it's just like mathematics there are **operators**, **statements** and **problem solvings**
 
 ## So, Where Should I start first ? 🤔
 
-- I highly recommended to learn **html** first either you want to be a backend developer or front-end
+- I highly recommended to learn **html** first , either you want to be a backend or front-end developer
 - After you learn html go with **CSS** to style you webpage
 - Then, learn **Javascript** for interactivity
 

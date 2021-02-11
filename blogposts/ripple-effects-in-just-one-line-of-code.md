@@ -35,21 +35,9 @@ On browser
 ```html
 <button id="btn">Ripple</button>
 <script>
-  ripple('.btn', {
-    background: 'yellow',
-  })
+  ripple('.btn')
 </script>
 ```
-
-<button id="rippleBtn" style="padding: .35rem .5rem; color: white; background: blue;border: none;border-radius: 5px;font-size: 1rem;">Ripple</button>
-
-<script>
-  window.onload = function() {
-    ripple("#rippleBtn", {
-      background: 'yellow',
-    })
-  }
-</script>
 
 ### You can view the demo here
 
