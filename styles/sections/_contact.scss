@@ -1,15 +1,16 @@
 .contact-section {
   margin: 1rem;
   border-radius: 10px;
-  padding: 2rem;
   .contact-body {
     display: flex;
     box-shadow: $shadow;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     border-radius: 20px;
     overflow: hidden;
+    margin: 0;
     @include responsive('medium') {
+      margin: 2rem;
       flex-direction: row;
     }
     .paragraphs {
