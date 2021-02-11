@@ -1,8 +1,8 @@
 {
   "name": "my portfolio website",
   "short_name": "portfolio",
-  "theme_color": "#dacb02",
-  "background_color": "#dacb02",
+  "theme_color": "#ee2e31",
+  "background_color": "#ee2e31",
   "display": "browser",
   "scope": "/",
   "start_url": "/"
