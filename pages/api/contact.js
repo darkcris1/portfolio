@@ -1,9 +1,10 @@
 import nodemailer from 'nodemailer'
+
 const transporter = nodemailer.createTransport({
   service: 'hotmail',
   auth: {
     user: 'sircnujnuj@hotmail.com',
-    pass: process.env.password,
+    pass: process.env.EMAIL_PASSWORD,
   },
 })
 
@@ -17,6 +18,8 @@ export default function handler(req, res) {
       html: `<h2> From: ${email}</h1><p>${message}</p>`,
     }
     transporter.sendMail(mailOptions, (err) => {
+      console.log(err)
+      console.log(process.env.EMAIL_PASSWORD)
       if (err) return res.status(400).send('Email not sent')
       return res.send('Email sent')
     })
