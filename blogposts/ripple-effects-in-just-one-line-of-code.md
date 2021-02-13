@@ -1,7 +1,7 @@
 --vars
 title: "Ripple effects with just one line of code in javascript",
 description: "how to implement ripple effects",
-image: "https://i.stack.imgur.com/beNis.gif",
+image: "https://i.ytimg.com/vi/QI2rDHQM5Pc/maxresdefault.jpg",
 js: "https://unpkg.com/ripple-effects",
 date: "Jan 28, 2021"
 --

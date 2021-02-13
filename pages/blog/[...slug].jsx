@@ -7,7 +7,12 @@ const slug = ({ data }) => {
   const { title, description, image, date, author, css, js } = data.vars
   return (
     <>
-      <SEO title={title} description={description}>
+      <SEO
+        title={title}
+        description={description}
+        ogType="website"
+        ogImage={image}
+      >
         {css && <link href={css} rel="stylesheet" />}
         {js && <script src={js} defer></script>}
         <link
@@ -43,11 +48,11 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
-const defaultVariables = {
-  date: 'Jan 24, 2021',
-  author: 'Cris Fandino Jr.',
-}
 export async function getStaticProps({ params }) {
+  const defaultVariables = {
+    date: new Date().toDateString().slice(4),
+    author: 'Cris Fandino Jr.',
+  }
   const fileName = params.slug.join('/')
   const { default: markdown } = await import(`../../blogposts/${fileName}.md`)
   const data = mdParse(markdown)

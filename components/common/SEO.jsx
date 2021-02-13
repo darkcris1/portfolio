@@ -9,10 +9,12 @@ const convertToMetaName = function (name) {
 
 const SEO = ({ children, title, description, canonical, ...props }) => {
   const [currentHref, setCurrentHref] = useState(canonical || 'https://')
+
   const metas = Object.entries(props).map(([name, content]) => {
-    if (/A-Z/.test(name)) name = convertToMetaName(name)
+    if (/[A-Z]/.test(name)) name = convertToMetaName(name)
     return <meta key={name} name={name} content={content} />
   })
+
   useEffect(() => setCurrentHref(window.location.href), [])
 
   return (
