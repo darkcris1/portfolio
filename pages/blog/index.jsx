@@ -5,6 +5,9 @@ import Cards from '../../components/Cards'
 import { useState } from 'react'
 import generateMdPaths from '../../utils/generateMdPaths'
 import mdParse from '../../utils/mdParse'
+import { domain } from '../../const'
+
+const blogDomain = domain + '/blog'
 
 const index = ({ blogposts }) => {
   const [size, setSize] = useState(3)
@@ -18,6 +21,10 @@ const index = ({ blogposts }) => {
       <SEO
         title="Blogposts"
         description="Cris Fandino blog website, sKnowledge is shareable and I am happy to share it to you"
+        ogUrl={blogDomain}
+        canonical={blogDomain}
+        image={domain + '/fr.png'}
+        ogImage={domain + '/fr.png'}
       />
       <Header
         title="Blog"

@@ -3,6 +3,9 @@ import Img from '../components/common/Img'
 import Header from '../components/Header'
 import { useEffect } from 'react'
 import onViewport from '../utils/onViewport'
+import { domain } from '../const'
+
+const aboutDomain = domain + '/about'
 
 const about = () => {
   useEffect(() => {
@@ -18,6 +21,11 @@ const about = () => {
       <SEO
         title="About Me | Cris Fandiño Jr."
         description="Cris Fandino Jr. A Brief introduction about my self"
+        canonical={aboutDomain}
+        url={aboutDomain}
+        ogUrl={aboutDomain}
+        image={domain + '/fr.png'}
+        ogImage={domain + '/fr.png'}
       ></SEO>
       <Header title="About" subText="Brief introduction about my self" />
       <section className="about-section">

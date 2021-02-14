@@ -7,15 +7,11 @@ const convertToMetaName = function (name) {
   return name.input.toLowerCase().replace(name[0], `${name[0]}:`)
 }
 
-const SEO = ({ children, title, description, canonical, ...props }) => {
-  const [currentHref, setCurrentHref] = useState(canonical || 'https://')
-
+const SEO = ({ children, title, description, ...props }) => {
   const metas = Object.entries(props).map(([name, content]) => {
     if (/[A-Z]/.test(name)) name = convertToMetaName(name)
     return <meta key={name} name={name} content={content} />
   })
-
-  useEffect(() => setCurrentHref(window.location.href), [])
 
   return (
     <Head>
@@ -42,7 +38,6 @@ const SEO = ({ children, title, description, canonical, ...props }) => {
           <meta name="twitter:description" content={description} />
         </>
       )}
-      <link rel="canonical" href={currentHref} />
       {metas}
       {children}
     </Head>

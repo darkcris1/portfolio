@@ -2,8 +2,9 @@ import generateMdPaths from '../../utils/generateMdPaths'
 import mdParse from '../../utils/mdParse'
 import Header from '../../components/Header'
 import SEO from '../../components/common/SEO'
+import { domain } from '../../const'
 
-const slug = ({ data }) => {
+const slug = ({ data, blogName }) => {
   const { title, description, image, date, author, css, js } = data.vars
   return (
     <>
@@ -12,6 +13,7 @@ const slug = ({ data }) => {
         description={description}
         ogType="website"
         ogImage={image}
+        canonical={domain + '/blog/' + blogName}
       >
         {css && <link href={css} rel="stylesheet" />}
         {js && <script src={js} defer></script>}
@@ -60,6 +62,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       data,
+      blogName: fileName,
     },
   }
 }

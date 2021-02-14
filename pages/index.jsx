@@ -5,12 +5,20 @@ import Work from '../components/sections/index/Work'
 import Skills from '../components/sections/index/Skills'
 import Banner from '../components/Banner'
 import Contact from '../components/Contact'
+import { domain } from '../const'
 
 const index = ({ githubData }) => {
   const yearsOfExperience = new Date().getFullYear() - 2020
   return (
     <>
-      <SEO title="Home" description="Basic">
+      <SEO
+        title="Home | Cris Fandiño Jr."
+        description="Cris fandiño Jr. Personal Portfolio"
+        canonical={domain}
+        ogUrl={domain}
+        image={domain + '/fr.png'}
+        ogImage={domain + '/fr.png'}
+      >
         <script async src="fontawesome.js"></script>
       </SEO>
       <Header
@@ -34,7 +42,7 @@ const index = ({ githubData }) => {
             href="https://www.sololearn.com/Profile/17777591"
             target="_blank"
           >
-            <img src="icons/sololearn.svg" alt="sololearn link" />
+            <img src="icons/sololearn.svg" alt="sololearn logo link" />
           </Link>
           <Link
             data-tooltip="Github"
@@ -48,7 +56,7 @@ const index = ({ githubData }) => {
             href="https://www.codewars.com/users/darkcris1"
             target="_blank"
           >
-            <img src="icons/codewars.svg" alt="github link" />
+            <img src="icons/codewars.svg" alt="codewars link" />
           </Link>
         </div>
       </Header>
