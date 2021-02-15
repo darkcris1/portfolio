@@ -29,6 +29,9 @@
   .title {
     color: $primary;
     margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0.1rem 0;
   }
   .text {
     margin-top: 2px;
@@ -39,6 +42,7 @@
   .image {
     width: 100%;
     height: 200px;
+    border-radius: $border;
     overflow: hidden;
     display: flex;
     align-items: center;

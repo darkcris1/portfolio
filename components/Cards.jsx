@@ -35,7 +35,7 @@ const Cards = ({
                 />
               </Link>
               <div className="texts">
-                <h3 className="title">{title}</h3>
+                <div className="title">{title}</div>
                 <p className="text">{text || description}</p>
               </div>
             </div>
