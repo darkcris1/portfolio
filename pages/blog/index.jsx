@@ -10,7 +10,7 @@ import { domain } from '../../const'
 const blogDomain = domain + '/blog'
 
 const index = ({ blogposts }) => {
-  const [size, setSize] = useState(3)
+  const [size, setSize] = useState(6)
   const isFull = blogposts.length > size
   function handleSize(e) {
     e.preventDefault()
@@ -19,8 +19,8 @@ const index = ({ blogposts }) => {
   return (
     <>
       <SEO
-        title="Blogposts"
-        description="Cris Fandino blog website, sKnowledge is shareable and I am happy to share it to you"
+        title="Blog Posts"
+        description="Cris Fandino blog website, Knowledge is shareable and I am happy to share it to you"
         ogUrl={blogDomain}
         canonical={blogDomain}
         image={domain + '/fr.png'}

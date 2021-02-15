@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
 
 const convertToMetaName = function (name) {
   name = name.match(/^og|^twitter|^theme/)

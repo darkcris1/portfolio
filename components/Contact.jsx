@@ -84,7 +84,9 @@ const Contact = () => {
             correct so I can get in touch to you immediately after I received
             the mails.
           </p>
-          <h4>You can also contact me via the following:</h4>
+          <p>
+            <strong> You can also contact me via the following:</strong>
+          </p>
           <div className="account-list">
             <Link href="https://facebook.com/crisjunjun123">
               <img src="icons/facebook.svg" width="50" alt="" />
