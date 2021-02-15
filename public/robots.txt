@@ -1,2 +1,4 @@
 User-Agent: *
 disallow: /api
+
+SITEMAP: https://crisfandino.ml/sitemap.xml
