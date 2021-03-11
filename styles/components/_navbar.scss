@@ -1,25 +1,31 @@
 nav {
   display: flex;
   width: 100%;
-  padding: 0 1rem;
+  max-width: $maxWidth;
+  padding: 0.5rem 1rem;
   z-index: 50;
   top: 0;
-  left: 0;
+  margin: 0 auto;
   position: fixed;
   background: transparent;
   align-items: center;
   color: white;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
+  .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
   a {
     color: white;
     text-decoration: none;
   }
+
   &.scrolled {
     background: rgba($fourth, 0.95);
-    box-shadow: -29px -22px 28px -20px rgba(0, 0, 0),
-      1px 10px 22px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
   }
+
   @include responsive('medium') {
     justify-content: space-around;
   }

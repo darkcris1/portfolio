@@ -14,7 +14,12 @@ const Banner = ({ title, link, linkLabel }) => {
   return (
     <div className="banner">
       <h1>{title}</h1>
-      <Link className="btn primary" target="_blank" href={link}>
+      <Link
+        rel="noopener noreferrer"
+        className="btn primary"
+        target="_blank"
+        href={link}
+      >
         {linkLabel}
       </Link>
     </div>

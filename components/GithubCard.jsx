@@ -4,7 +4,6 @@ import Link from './common/Link'
 
 const GithubCard = ({ data }) => {
   const { avatar_url, bio, login, public_gists, public_repos } = data
-
   useEffect(() => {
     const cards = document.querySelectorAll(
       '.github-user > *, .github-user .content > *',
@@ -18,11 +17,13 @@ const GithubCard = ({ data }) => {
   return (
     <div className="github-user">
       <div className="avatar">
-        <img src={avatar_url} alt="github avatar" />
+        <img src={avatar_url} width="200" height="200" alt="github avatar" />
       </div>
       <div className="content">
         <div className="user">
-          <Link href="https://github.com/darkcris1">github/{login}</Link>
+          <Link rel="noopener noreferrer" href="https://github.com/darkcris1">
+            github/{login}
+          </Link>
         </div>
         <div className="bio">{bio}</div>
         <div className="counts">

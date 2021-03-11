@@ -19,7 +19,7 @@ const slug = ({ data, blogName }) => {
         {js && <script src={js} defer></script>}
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-vsc-dark-plus.css"
+          href="https://cdn.jsdelivr.net/npm/prism-themes@1.5.0/themes/prism-vsc-dark-plus.min.css"
         />
       </SEO>
       <Header image={image} title={title} subText={description}>

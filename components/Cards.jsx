@@ -28,7 +28,7 @@ const Cards = ({
         return (
           <div key={title + i} className="card">
             <div className="image-text">
-              <Link href={link} className="image">
+              <Link href={link} rel="noopener noreferrer" className="image">
                 <Img
                   src={image || defaultImage}
                   alt={alt || 'sample picture'}

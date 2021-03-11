@@ -5,16 +5,16 @@ import onViewport from '../../../utils/onViewport'
 const languageList = {
   listName: 'Language',
   lists: [
-    { label: 'HTML', color: '#F9AE40', percent: 100 },
+    { label: 'HTML', color: '#F9AE40', percent: 90 },
     {
       label: 'CSS/SASS',
       color: 'linear-gradient(171deg, #1E2EF3, #DC00FB)',
-      percent: 97,
+      percent: 85,
     },
     {
       label: 'Javascript/Node',
       color: 'linear-gradient(171deg, #F7FF23, #49DC28)',
-      percent: 90,
+      percent: 80,
     },
   ],
 }

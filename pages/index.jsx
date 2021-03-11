@@ -39,6 +39,7 @@ const index = ({ githubData }) => {
         <div className="account-icon">
           <Link
             data-tooltip="Sololearn"
+            rel="noopener noreferrer"
             href="https://www.sololearn.com/Profile/17777591"
             target="_blank"
           >
@@ -46,6 +47,7 @@ const index = ({ githubData }) => {
           </Link>
           <Link
             data-tooltip="Github"
+            rel="noopener noreferrer"
             href="https://github.com/darkcris1"
             target="_blank"
           >
@@ -53,6 +55,7 @@ const index = ({ githubData }) => {
           </Link>
           <Link
             data-tooltip="Codewars"
+            rel="noopener noreferrer"
             href="https://www.codewars.com/users/darkcris1"
             target="_blank"
           >

@@ -21,7 +21,7 @@
     height: 2rem;
     position: relative;
     border: 1px solid #a5a5a5;
-    border-radius: 10px;
+    border-radius: $border;
     overflow: hidden;
     box-shadow: $shadow;
     .progress-bar {

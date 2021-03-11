@@ -65,6 +65,7 @@ const Contact = () => {
     })
     setData({ name: '', email: '', message: '' })
   }
+
   useEffect(() => {
     const elems = document.querySelectorAll('.paragraphs > *, form > *')
     const observer = onViewport(elems, (el, i) => {
@@ -88,11 +89,17 @@ const Contact = () => {
             <strong> You can also contact me via the following:</strong>
           </p>
           <div className="account-list">
-            <Link href="https://facebook.com/crisjunjun123">
-              <img src="icons/facebook.svg" width="50" alt="" />
+            <Link
+              rel="noopener noreferrer"
+              href="https://facebook.com/crisjunjun123"
+            >
+              <img src="icons/facebook.svg" width="50" alt="facebook link" />
             </Link>
-            <Link href="mailto:sircnujnuj@gmail.com?subject=Get in touch">
-              <img src="icons/gmail.svg" width="50" alt="" />
+            <Link
+              rel="noopener noreferrer"
+              href="mailto:sircnujnuj@gmail.com?subject=Get in touch"
+            >
+              <img src="icons/gmail.svg" width="50" alt="facebook link" />
             </Link>
           </div>
         </div>

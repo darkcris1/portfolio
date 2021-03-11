@@ -3,7 +3,7 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 const navData = {
-  logo: <h1>Cris....</h1>,
+  logo: 'Cris...',
   links: [
     { href: '/', text: 'Home' },
     { href: '/about', text: 'About' },
@@ -16,8 +16,13 @@ const Layout = ({ title, children }) => {
     <div className="container">
       <SEO title={title} description="Docs">
         <meta name="theme-color" content="#ee2e31" />
-        <link rel="icon" href="/icons/logo.svg" type="image/svg+xml" />
+        <link
+          rel="shortcut icon"
+          href="/assets/favicon.ico"
+          type="image/x-icon"
+        />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/assets/icon-192x192.png" />
       </SEO>
       <Navbar data={navData} />
       {children}

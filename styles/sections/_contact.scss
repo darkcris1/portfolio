@@ -1,6 +1,6 @@
 .contact-section {
   margin: 1rem;
-  border-radius: 10px;
+  border-radius: $border;
   .contact-body {
     display: flex;
     box-shadow: $shadow;
@@ -34,6 +34,7 @@
     }
     .form-input {
       margin: 0.5rem 0;
+      text-align: left;
     }
     input,
     textarea {
