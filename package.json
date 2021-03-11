@@ -14,13 +14,14 @@
     "json-msg": "^1.1.2",
     "marked": "^1.2.7",
     "next": "10.0.4",
-    "next-pwa": "^5.0.5",
+    "next-pwa": "^5.0.6",
     "nodemailer": "^6.4.17",
     "nprogress": "^0.2.0",
     "prismjs": "^1.22.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "sass": "^1.30.0"
+    "sass": "^1.30.0",
+    "sharp": "^0.27.2"
   },
   "devDependencies": {
     "raw-loader": "^4.0.2"
