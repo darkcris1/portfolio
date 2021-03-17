@@ -21,10 +21,8 @@ const index = ({ blogposts }) => {
       <SEO
         title="Blog Posts"
         description="Cris Fandino blog website, Knowledge is shareable and I am happy to share it to you"
-        ogUrl={blogDomain}
-        canonical={blogDomain}
-        image={domain + '/fr.png'}
-        ogImage={domain + '/fr.png'}
+        url={blogDomain}
+        image={domain + '/assets/fr.png'}
       />
       <Header
         title="Blog"

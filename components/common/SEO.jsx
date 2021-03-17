@@ -6,7 +6,7 @@ const convertToMetaName = function (name) {
   return name.input.toLowerCase().replace(name[0], `${name[0]}:`)
 }
 
-const SEO = ({ children, title, description, ...props }) => {
+const SEO = ({ children, title, description, image, url, ...props }) => {
   const metas = Object.entries(props).map(([name, content]) => {
     if (/[A-Z]/.test(name)) name = convertToMetaName(name)
     return <meta key={name} name={name} content={content} />
@@ -30,11 +30,26 @@ const SEO = ({ children, title, description, ...props }) => {
         name="robots"
         content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
       />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta content="website" name="og:type" />
       {description && (
         <>
           <meta name="description" content={description} />
           <meta name="og:description" content={description} />
           <meta name="twitter:description" content={description} />
+        </>
+      )}
+      {image && (
+        <>
+          <meta name="og:image" content={image} />
+          <meta name="twitter:image" content={image} />
+        </>
+      )}
+      {url && (
+        <>
+          <meta name="og:url" content={url} />
+          <meta name="twitter:url" content={url} />
+          <link rel="canonical" href={url} />
         </>
       )}
       {metas}

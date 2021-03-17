@@ -11,9 +11,20 @@ const Navbar = ({ data }) => {
     setShow(!show)
   }
   useEffect(() => {
+    let prevScrollpos = window.pageYOffset
+    const navbar = nav.current
     function navScroll() {
-      if (this.pageYOffset > 80) nav.current.classList.add('scrolled')
-      else nav.current.classList.remove('scrolled')
+      if (this.pageYOffset > 80) navbar.classList.add('scrolled')
+      else navbar.classList.remove('scrolled')
+
+      const offsetBegin = 200
+      const currentScrollPos = window.pageYOffset
+      if (prevScrollpos > currentScrollPos || currentScrollPos <= offsetBegin) {
+        navbar.style.transform = 'translateY(0)'
+      } else {
+        navbar.style.transform = 'translateY(-100%)'
+      }
+      prevScrollpos = currentScrollPos
     }
     // Initialize in first load
     navScroll.apply(window)

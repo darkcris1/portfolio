@@ -14,16 +14,14 @@ const index = ({ githubData }) => {
       <SEO
         title="Home | Cris Fandiño Jr."
         description="Cris fandiño Jr. Personal Portfolio"
-        canonical={domain}
-        ogUrl={domain}
-        image={domain + '/fr.png'}
-        ogImage={domain + '/fr.png'}
+        url={domain}
+        image={domain + '/assets/fr.png'}
       >
         <script async src="fontawesome.js"></script>
       </SEO>
       <Header
-        title="Cris Fandiño Jr. "
-        subText={`I am web developer with ${yearsOfExperience} year of experience`}
+        title="Hey! I am Cris. "
+        subText={`I create custom websites to help businesses to their standards`}
       >
         <div className="button my-2">
           <Link
@@ -67,7 +65,7 @@ const index = ({ githubData }) => {
       <Work githubData={githubData} />
       <Banner
         link="https://github.com/darkcris1?tab=repositories"
-        linkLabel="See more"
+        linkLabel="Visit Github"
         title="Want to see more about my projects?"
       />
       <Contact />

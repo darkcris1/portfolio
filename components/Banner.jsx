@@ -15,9 +15,10 @@ const Banner = ({ title, link, linkLabel }) => {
     <div className="banner">
       <h1>{title}</h1>
       <Link
+        role="navigation"
         rel="noopener noreferrer"
-        className="btn primary"
         target="_blank"
+        className="btn primary"
         href={link}
       >
         {linkLabel}

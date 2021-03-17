@@ -21,11 +21,8 @@ const about = () => {
       <SEO
         title="About Me | Cris Fandiño Jr."
         description="Cris Fandino Jr. A Brief introduction about my self"
-        canonical={aboutDomain}
         url={aboutDomain}
-        ogUrl={aboutDomain}
-        image={domain + '/fr.png'}
-        ogImage={domain + '/fr.png'}
+        image={domain + '/assets/my-picture-transparent.png'}
       ></SEO>
       <Header title="About" subText="Brief introduction about my self" />
       <section className="about-section">
@@ -35,11 +32,11 @@ const about = () => {
         <article className="paragraph">
           <h1>Hi! I am Cris Fandiño Jr.</h1>
           <p>
-            I am 18 years old from the Philippines a self taught web developer
-            with 1 year of experience. I build websites according to web
-            standards guidelines. I have experience few of the languages and
-            frameworks such as HTML, CSS ,Javascript, Nodejs, Bootstrap,
-            TailwindCSS, Sass, React/Next.js and Svelte.
+            I am 18 years old from the Philippines a self taught web developer .
+            I build websites according to web standards guidelines. I have
+            experience few of the languages and frameworks such as HTML, CSS
+            ,Javascript, Nodejs, Bootstrap, TailwindCSS, Sass, React/Next.js and
+            Svelte.
           </p>
           <p>
             At first I intended to be a web designer but my pulse was truly more

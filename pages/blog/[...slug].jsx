@@ -11,9 +11,8 @@ const slug = ({ data, blogName }) => {
       <SEO
         title={title}
         description={description}
-        ogType="website"
-        ogImage={image}
-        canonical={domain + '/blog/' + blogName}
+        image={image}
+        url={domain + '/blog/' + blogName}
       >
         {css && <link href={css} rel="stylesheet" />}
         {js && <script src={js} defer></script>}
