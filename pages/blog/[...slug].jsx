@@ -3,6 +3,7 @@ import mdParse from '../../utils/mdParse'
 import Header from '../../components/Header'
 import SEO from '../../components/common/SEO'
 import { domain } from '../../const'
+import Giscus from '../../components/Giscus'
 
 const slug = ({ data, blogName }) => {
   const { title, description, image, date, author, css, js } = data.vars
@@ -34,6 +35,7 @@ const slug = ({ data, blogName }) => {
             className="markdown"
             dangerouslySetInnerHTML={{ __html: data.html }}
           />
+          <Giscus style={{width: "100%"}} />
         </main>
       </section>
     </>
